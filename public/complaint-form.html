@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הגשת תלונה</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="form-header">
+            <h1>הגשת תלונה אנונימית</h1>
+            <p>כל הפרטים יישארו חסויים</p>
+        </div>
+        
+        <form class="complaint-form" id="complaintForm" action="http://localhost:3000/soldier/compliment" method="post">
+            <div class="form-group">
+                <label for="description">תוכן התלונה:</label>
+                <textarea id="description" name="complimentTEXT" rows="8" required 
+                          placeholder="אנא תאר בפירוט את המחמאה שברצונך לשלוח..."></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit" class="submit-button">שלח תלונה</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
