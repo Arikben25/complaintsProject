@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>הגשת תלונה</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>שלום לך חייל יקר</h1>
+   
+    <div class="c">
+        <h1>ברוך הבא!</h1>
         <p>להגשת תלונה לחץ כאן</p>
-        <button class="complaint-button" onclick="submitComplaint()">
+       
+            <button class="complaint-button" onclick="submitComplaint()">
             הגש תלונה
         </button>
+        <p>לכניסת מפקד לחץ כאן</p>
+        <div class="container_commander">
+            <button class="commander-button" onclick="contactCommander()">
+            כניסת מפקד 
+        </button>
+     
+        </div>
+        
+        
     </div>
 
     <script>
         function submitComplaint() {
             window.location.href = 'complaint-form.html';
         }
+
+         function contactCommander() {
+            window.location.href = 'comander-form.html';
+        }
     </script>
 </body>
+
 </html>
